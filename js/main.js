@@ -39,6 +39,20 @@
     });
   }
 
+  function notify() {
+
+    /*
+    common issue
+
+    XMLHttpRequest cannot load <target-url>. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin <source-url> is therefore not allowed access.
+  
+    */
+  }
+
+  function notify() {
+    
+  }
+
   /*================================================================ URL LIST
   */
 
