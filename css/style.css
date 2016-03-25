@@ -20,21 +20,18 @@ table {
 }
 
 tbody > tr > td:first-child {
-  background-color: yellow;
+  color: white;
+  background-color: black;
 }
 
-.result {
-  color: white;
-  background-color: orange;
-  color: white;
+.result-warning {
+  background-color: orange !important;
 }
 
 .result-success {
-  background-color: green;
-  color: white;
+  background-color: green !important;
 }
 
 .result-fail {
-  background-color: red;
-  color: white;
+  background-color: red !important;
 }
