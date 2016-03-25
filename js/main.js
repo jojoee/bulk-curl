@@ -11,23 +11,30 @@
   var $lunch = document.getElementById('lunch');
   var urlListKey = 'urllist';
   var i = 0;
+  var isDebug = true;
+
+  function appLog(log) {
+    if (isDebug) {
+      console.log(log);
+    }
+  }
 
   function saveLocal(key, val, cb) {
-    console.log('saveLocal');
+    appLog('saveLocal');
     var localKey = appDomain + key;
 
     localforage.setItem(localKey, val).then(function() {
-      console.log('saveLocal - then');
+      appLog('saveLocal - then');
       cb();
     });
   }
 
   function getLocal(key, cb) {
-    console.log('getLocal');
+    appLog('getLocal');
     var localKey = appDomain + key;
 
     localforage.getItem(localKey, function(err, val) {
-      console.log('getLocal - then');
+      appLog('getLocal - then');
       cb(err, val);
     });
   }
@@ -36,22 +43,22 @@
   */
 
   function saveUrlList() {
-    console.log('saveUrlList');
+    appLog('saveUrlList');
     var val = $urlList.value;
     
     saveLocal(urlListKey, val, function() {
-      console.log('saveUrlList - then');
+      appLog('saveUrlList - then');
       // notify the user
     });
   }
 
   function getUrlList() {
-    console.log('getUrlList');
+    appLog('getUrlList');
 
     getLocal(urlListKey, function(err, val) {
-      console.log('getUrlList - then')
+      appLog('getUrlList - then')
       if (err) {
-        console.log(err)
+        appLog(err)
         // notify the user
         
       } else {
@@ -99,29 +106,29 @@
   }
 
   function fetchUrl(no, url) {
-    console.log('fetchUrl');
+    appLog('fetchUrl');
     var request = new XMLHttpRequest();
 
     request.open('GET', url, true);
     request.onload = function() {
-      console.log('fetchUrl - onload');
+      appLog('fetchUrl - onload');
 
       // success
       if (request.status >= 200 && request.status < 400) {
-        console.log('fetchUrl - onload - success', request);
+        appLog('fetchUrl - onload - success', request);
         updateTBody(no, url, 'result-success', request.responseText);
 
       } else {
         // We reached our target server, but it returned an error
-        console.log('fetchUrl - onload', request);
-        // updateTBody(no, url, 'result', result);
+        appLog('fetchUrl - onload', request);
+        updateTBody(no, url, 'result-warning', '');
       }
     };
 
     request.onerror = function() {
       // There was a connection error of some sort
-      console.log('fetchUrl - onerror');
-      // updateTBody(no, url, 'result-fail', result);
+      appLog('fetchUrl - onerror');
+      updateTBody(no, url, 'result-fail', '');
     };
 
     request.send();
