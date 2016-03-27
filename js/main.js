@@ -60,7 +60,7 @@ function issuePopup() {
 
   var urlListKey = 'urllist';
   var i = 0;
-  var isDebug = true;
+  var isDebug = false;
   var nFetchedUrls = 0;
   var nUrls = 0;
 
