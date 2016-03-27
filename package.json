@@ -1,0 +1,30 @@
+{
+  "name": "bulk-curl",
+  "description": "Simple bulk cURL",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jojoee/bulk-curl.git"
+  },
+  "keywords": [
+    "cURL",
+    "CORS",
+    "cross origin resource sharing"
+  ],
+  "author": "Nathachai Thongniran",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jojoee/bulk-curl/issues"
+  },
+  "homepage": "https://github.com/jojoee/bulk-curl#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.2.0"
+  },
+  "scripts": {
+    "gulp": "gulp",
+    "start": "gulp default"
+  }
+}
