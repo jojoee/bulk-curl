@@ -3,40 +3,49 @@
 <head>
 <meta charset="UTF-8">
 <title>bulk cURL</title>
+<link rel="stylesheet" href="vendor/pace/pace-theme-flash.css">
+<link rel="stylesheet" href="vendor/sweetalert/sweetalert.css">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="left">
-  <textarea name="url-list" id="url-list" cols="30" rows="100"></textarea>  
-</div>
-<div class="right">
-  <button id="lunch">Lunch</button>
+<div class="wrapper">
+  <div class="screen" id="first-screen">
+    <h1 class="title">Bulk cURL</h1>
+    <h4 class="sub-title">Enter URLs here</h4>
+    <textarea name="url-list" wrap="off" id="url-list"></textarea>
+    <button id="lunch">Lunch</button>
+  </div><!-- .first-screen -->
 
-  <div id="output">
-    <div class="notify"></div>
+  <div class="screen" id="second-screen">
+    <h1 class="title">Bulk cURL</h1>
+    <h4 class="sub-title">Output Table</h4>
+    <p class="notify-msg"></p>
 
-    <table>
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>URL</th>
-          <th>Result</th>
-        </tr>
-      </thead>
-      <tbody id="output-body">
+    <div class="tbl-header">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>URL</th>
+            <th>Result</th>
+          </tr>
+        </thead>
+      </table>
+    </div><!-- .tbl-header -->
 
-      </tbody>
-      <tfoot>
-        <tr>
-          <th></th>
-          <th></th>
-          <th></th>
-        </tr>
-      </tfoot>
-    </table>
-  </div>
-</div>
+    <div class="tbl-content">
+      <table cellpadding="0" cellspacing="0" border="0">
+        <tbody id="output-body">
+
+        </tbody>
+      </table>
+    </div><!-- .tbl-content -->
+  </div><!-- .second-screen -->
+</div><!-- .wrapper -->
+<script src="vendor/pace/pace.min.js"></script>
+<script src="vendor/superplaceholder.js/superplaceholder.min.js"></script>
 <script src="vendor/localForage/localforage.min.js"></script>
+<script src="vendor/sweetalert/sweetalert.min.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

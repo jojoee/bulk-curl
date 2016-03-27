@@ -1,0 +1,10 @@
+# dependency
+node_modules
+
+# backup and note
+bk
+README*.md
+!README-*.md
+
+# design
+*.psd

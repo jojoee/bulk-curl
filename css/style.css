@@ -1,37 +1,97 @@
+/*
+@media (max-width: $screen-xs-max) { ... }
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) { ... }
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) { ... }
+@media (min-width: $screen-lg-min) { ... }
+*/
 * {
   padding: 0;
   margin: 0;
-}
+  font-family: monospace; }
 
-.left,
-.right {
-  width: 50%;
+html {
+  height: 100%; }
+
+body {
+  height: 100%; }
+
+.wrapper {
+  position: relative;
   height: 100%;
-  float: left;
-}
+  text-align: center;
+  padding: 24px 12px; }
+  @media (min-width: 768px) {
+    .wrapper {
+      width: 750px;
+      padding: 0;
+      margin: 0 auto; } }
+  @media (min-width: 992px) {
+    .wrapper {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .wrapper {
+      width: 1170px; } }
 
-#url-list {
-  width: 100%;
-  height: 100%;
-}
+.screen {
+  position: relative;
+  padding-top: 24px;
+  padding-bottom: 24px; }
 
-table {
-  width: 100%;
-}
+.title {
+  color: #f00fb8; }
 
-tbody > tr > td:first-child {
-  color: white;
-  background-color: black;
-}
+.sub-title {
+  color: #b10e88;
+  padding-bottom: 12px; }
+
+#first-screen {
+  height: 100%; }
+  #first-screen #url-list {
+    height: 620px;
+    margin-bottom: 12px;
+    resize: none;
+    border: 1px solid #f00fb8;
+    padding: 0.5% 1%;
+    width: 98%; }
+  #first-screen #lunch {
+    background-color: #f00fb8;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px; }
+
+#second-screen {
+  min-height: 100%; }
+  #second-screen table {
+    width: 100%;
+    table-layout: fixed;
+    overflow: scroll; }
+  #second-screen .tbl-header {
+    background-color: #b10e88;
+    text-align: left; }
+    #second-screen .tbl-header th {
+      padding: 18px 12px;
+      color: #fff;
+      text-transform: uppercase; }
+      #second-screen .tbl-header th:first-child {
+        width: 5%; }
+  #second-screen .tbl-content {
+    text-align: left; }
+    #second-screen .tbl-content td {
+      padding: 12px;
+      vertical-align: middle;
+      border-bottom: solid 1px #f00fb8; }
+      #second-screen .tbl-content td:first-child {
+        width: 5%;
+        color: #fff;
+        background-color: #b10e88; }
 
 .result-warning {
-  background-color: orange !important;
-}
+  background-color: orange !important; }
 
 .result-success {
-  background-color: green !important;
-}
+  background-color: green !important; }
 
 .result-fail {
-  background-color: red !important;
-}
+  background-color: red !important; }
