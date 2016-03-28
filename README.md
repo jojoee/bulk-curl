@@ -13,6 +13,7 @@ bulk cURL URLs, to fetch / call a huge url lists
 - [ ] Check naming
 - [ ] Check code style
 - [ ] Fixed screen's position when click "OK" on "Done's popup"
+- [ ] Add screenshot (gif)
 
 ## Thank you
 - [localForage](https://github.com/mozilla/localForage) - 1.4.0
