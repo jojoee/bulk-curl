@@ -186,14 +186,25 @@ function issuePopup() {
     $outputBody.innerHTML = '';
   }
 
-  function addToOutputTable(no, url, result) {
+  function addToOutputTable(no, url, result, isUrl) {
     var html = '<tr id="url-' + no + '">';
     html += '<td>' + no + '</td>';
-    html += '<td>' + url + '</td>';
-    html += '<td>' + result + '</td>';
+
+    if (isUrl) {
+      html += '<td><a href="' + url + '" target="_blank">' + url + '</td>';
+
+    } else {
+      html += '<td>' + url + '</td>';  
+    }
+
+    html += '<td><div class="result">' + result + '</div></td>';
     html += '</tr>';
 
     $outputBody.innerHTML += html;
+  }
+
+  function addUrlToOutputTable(no, url, result) {
+    addToOutputTable(no, url, result, true);
   }
 
   function updateOutputTable(no, statusCssClass, result) {
@@ -203,7 +214,10 @@ function issuePopup() {
     var $result = $columns[2];
 
     $status.classList.add(statusCssClass);
-    $result.innerHTML = result;
+
+    // this line is not good, need improvements
+    // seem duplicate with line 200
+    $result.innerHTML = '<div class="result">' + result + '</div>';
   }
 
   /*================================================================ APP
@@ -273,7 +287,7 @@ function issuePopup() {
       nUrls++;
 
       if (isURL(url)) {
-        addToOutputTable(i, url, '');
+        addUrlToOutputTable(i, url, '');
         fetchUrl(i, urls[i]);
 
       } else {

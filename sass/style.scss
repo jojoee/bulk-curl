@@ -158,6 +158,14 @@ body {
         color: $white;
         background-color: $accent-color2;
       }
+
+      &:last-child {
+
+        > .result {
+          max-height: 240px;
+          overflow: hidden;
+        }
+      }
     }
   }
 }

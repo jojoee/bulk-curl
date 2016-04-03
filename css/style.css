@@ -86,6 +86,9 @@ body {
         width: 5%;
         color: #fff;
         background-color: #b10e88; }
+      #second-screen .tbl-content td:last-child > .result {
+        max-height: 240px;
+        overflow: hidden; }
 
 .result-warning {
   background-color: orange !important; }
