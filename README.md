@@ -4,6 +4,7 @@ bulk cURL URLs, to fetch / call a huge url lists
 ## Note
 - Javascript code style: [Airbnb JavaScript Style Guide() {](https://github.com/airbnb/javascript)
 - Javascript framework: [Vanilla JS](http://vanilla-js.com/)
+- [Chrome extension URL](https://chrome.google.com/webstore/detail/gbjifpfbfnblelnpiejbpiahllhmkkno/)
 
 ## TODO
 - [ ] Add favicon
@@ -15,7 +16,7 @@ bulk cURL URLs, to fetch / call a huge url lists
 - [ ] Fixed screen's position when click "OK" on "Done's popup"
 - [ ] Add screenshot (gif)
 - [ ] Add to chrome extension store
-- [ ] Add to chrome application store
+- [x] Add to chrome application store
 - [ ] Add to firefox extension store
 - [ ] Add to safari extension store
 
