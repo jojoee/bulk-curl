@@ -15,6 +15,7 @@ bulk cURL URLs, to fetch / call a huge url lists
 - [ ] Fixed screen's position when click "OK" on "Done's popup"
 - [ ] Add screenshot (gif)
 - [ ] Add to chrome extension store
+- [ ] Add to chrome application store
 - [ ] Add to firefox extension store
 - [ ] Add to safari extension store
 
