@@ -1,5 +1,5 @@
 # bulk-curl
-[![Downloads](https://img.shields.io/chrome-web-store/d/gbjifpfbfnblelnpiejbpiahllhmkkno.svg)](https://chrome.google.com/webstore/detail/bulk-curl/gbjifpfbfnblelnpiejbpiahllhmkkno?hl=en-US) [![Rating](https://img.shields.io/chrome-web-store/rating/gbjifpfbfnblelnpiejbpiahllhmkkno.svg)](https://chrome.google.com/webstore/detail/bulk-curl/gbjifpfbfnblelnpiejbpiahllhmkkno?hl=en-US)
+[![Downloads](https://img.shields.io/chrome-web-store/d/gbjifpfbfnblelnpiejbpiahllhmkkno.svg)](https://chrome.google.com/webstore/detail/bulk-curl/gbjifpfbfnblelnpiejbpiahllhmkkno?hl=en-US) [![Rating](https://img.shields.io/chrome-web-store/rating/gbjifpfbfnblelnpiejbpiahllhmkkno.svg)](https://chrome.google.com/webstore/detail/bulk-curl/gbjifpfbfnblelnpiejbpiahllhmkkno?hl=en-US) [![Greenkeeper badge](https://badges.greenkeeper.io/jojoee/bulk-curl.svg)](https://greenkeeper.io/)
 
 bulk cURL URLs, to fetch / call a huge url lists
 
